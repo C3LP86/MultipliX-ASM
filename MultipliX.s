@@ -1,11 +1,11 @@
 global _start
 
 section .data
-    GuestPromptA db 'Enter a value for A: '
+    GuestPromptA db 'Enter a value for A : '
     GuestPromptA_Len equ $-GuestPromptA
-    GuestPromptB db 'Enter a value for B: '
+    GuestPromptB db 'Enter a value for B : '
     GuestPromptB_Len equ $-GuestPromptB
-    GuestPrompt_Result db 'Result: '
+    GuestPrompt_Result db 'Result : '
     GuestPrompt_Result_Len equ $-GuestPrompt_Result
     buffer times 100 db 0                                       ; buffer of 100 bytes filled with 0
     Result_Buffer times 20 db 0                                 ; buffer to store the result as a string
